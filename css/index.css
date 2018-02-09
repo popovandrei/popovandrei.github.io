@@ -1,0 +1,80 @@
+body {
+    background-color: #18191C;
+}
+@media (min-width: 500px) {
+    .container-1 {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+    }
+}
+.contacts {
+    display: flex;
+    background-color: #36393E;
+    margin: 10px;
+    padding: 10px;
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.info__block {
+    margin: 10px;
+    padding: 10px;
+}
+.photo {
+    width: 362px;
+    height: 185px;
+    position: relative;
+    overflow: hidden;
+    background-color: #E6EBF4;
+    margin: 10px;
+    padding: 10px;
+    z-index: 1;
+}
+.name {
+    z-index: 2;
+}
+img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+.wraper {
+display:flex;
+}
+.experience {
+    background-color: #E6EBF4;
+    color: #43B581;
+    margin: 10px;
+    padding: 10px;
+}
+.education {
+    background-color: #E6EBF4;
+    color: #43B581;
+    margin: 10px;
+    padding: 10px;
+}
+.skills {
+    background-color: #E6EBF4;
+    color: #43B581;
+    margin: 10px;
+    padding: 10px;
+}
+.languageskills {
+    background-color: #E6EBF4;
+    color: #43B581;
+    margin: 10px;
+    padding: 10px;
+}
+.additionalinformation {
+    background-color: #E6EBF4;
+    color: #43B581;
+    margin: 10px;
+    padding: 10px;
+}
