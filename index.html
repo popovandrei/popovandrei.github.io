@@ -1,73 +1,632 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="yandex-verification" content="603db306744c2173" />
-    <meta name="viewport" content="width=device-vidth, initial-scale=1" />
-    <title>Popov Andrei CV</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Popov Andrei</title>
+        
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <meta name="keywords" content="Popov Andrei">
+        <meta name="description" content="Popov Andrei">
+        
+        <meta property="og:site_name" content="Rabota.md">
+        <meta property="og:image" content="//www.rabota.md/image/social_logo.png">
+        <meta property="og:image:secure_url" content="https://www.rabota.md/image/social_logo.png"> 
+        <meta itemprop="og:description" content="Popov Andrei"> 
+<link rel="shortcut icon" href="https://popovandrei.github.io/img/pa.ico" type="image/x-icon">
+
+<link href="./css/css" rel="stylesheet">
+<link href="./css/css.css" type="text/css" rel="stylesheet">
+        <style type="text/css">
+            #loginBox {
+                margin-left:-175px;
+                left: 50%!important;
+                margin-top:200px;
+            }
+
+            .c_prev, .c_next {
+                position: fixed;
+                top: 50%;
+                margin-top: -43px;
+                z-index: 1;
+                overflow: hidden;
+                text-indent: -9999px;
+                text-align: left;
+                cursor: pointer;
+                background: url(/im/c_arrow1.svg) no-repeat;
+                border-radius: 50%;
+                background-color: #FFF;
+                width: 86px;
+                height: 86px;
+                background-size: cover;
+            }
+
+            .c_prev {
+                left: 50px;
+                background-position: 0 0;
+            }
+            .c_next {
+                right: 50px;
+                background-position: -86px 0;
+            }
+
+            .summary {
+                background: #FCFCFC;
+                box-shadow: 0 0px 5px 0 rgba(179,181,183, 0.5);
+                padding: 15px 20px;
+                margin: 0 0 10px 0;
+                width: auto;
+                position: relative;
+            }
+
+            .summary span {
+                padding: 0 5px 0 3px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            #rsm_photo_left {
+                float: left;
+            }
+
+            #rsm_photo_right {
+                width: 450px;
+                float: left;
+                margin-left: 30px;
+            }
+
+            #rsm_alert_4 {
+                margin-top: 10px;
+                padding: 0px 5px 23px 5px;
+                font-family: Arial, sans-serif;
+                color: #ec4a48;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .rsm_interview a {
+                background-color: #77b61b;
+                padding: 7px 15px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 16px;
+                text-decoration: none;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+            }
+
+            #rsm_photo_left img {
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                padding-bottom: 10px;
+            }
+
+            .info_class {
+                /*float: right;*/
+                font-weight: 600;
+            }
+
+            .title_class {
+                width: 90px;
+                display: inline-block;
+            }
+            
+            .rsm_photo_item {
+                padding-bottom: 6px;
+            }
+
+            .rsm_recom_item {
+                width: 280px;
+                min-height: 70px;
+                padding: 10px 15px;
+                background-color: #fcfcfc;
+                float: left;
+                -moz-box-shadow: 0px 0px 4px #afafaf;
+                -webkit-box-shadow: 0px 0px 4px #afafaf;
+                box-shadow: 0px 0px 4px #afafaf;
+            }
+
+            .rsm_recom_email {
+                color: #0082d2;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            
+            .rsm_bottom_line {
+                border-bottom: 1px solid #354353;
+                padding: 25px 15px 0 22px;
+            }
+
+            .rsm_education {
+                padding: 10px 30px;
+                font-size: 20px;
+                line-height: 20px;
+                border: 2px solid #ff6600;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                top: 0;
+                display: block;
+                left: 0px; 
+                position: relative; 
+                float: right;
+            }
+
+            .title_education {
+                font-size: 28px;
+                line-height: 33px;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+            .rsm_block_left {
+                width: 140px;
+                padding-right: 20px;
+                float: left;
+                text-align: right;
+            }
+
+            .rsm_block_right {
+                width: 445px;
+                float: left;
+                margin-left: 20px;
+            }
+
+            .rsm_data span {
+                color: #2e2e2e;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .rsm_adress {
+                margin-right: -15px;
+                background-color: #fcfcfc;
+                padding: 15px;
+                color: #5b5b5b;
+                font-size: 14px;
+                -moz-box-shadow: 0px 0px 4px #afafaf;
+                -webkit-box-shadow: 0px 0px 4px #afafaf;
+                box-shadow: 0px 0px 4px #afafaf;
+            }
+
+            .rsm_h2_blue {
+                margin-bottom: 20px;
+                font-size: 22px;
+                line-height: 25px;
+                color: #58bd26;
+                font-weight: 600;
+            }
+
+            .rsm_block_item {
+                margin-bottom: 40px;
+            }
+
+            .alert_message {
+                color: #ec4a48;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .rs_menu {
+                position: fixed;
+                top: 145px;
+                border-top: 1px solid #d2d2d2;
+                margin: 20px 0 0;
+                padding: 0;
+                /*z-index: 2;
+                background-color:#F4F4F4;*/
+            }
+
+            .rs_menu div {
+                border-bottom:  1px solid #d2d2d2;
+                padding: 10px 10px 10px 5px;
+                font-weight: bold;
+            }
+
+            .rs_menu div:hover {
+                background-color: #FFF;
+            }
+
+             .rs_menu div a {
+                color: #0082d2;
+             }
+
+             .rs_menu div a:hover {
+                color: #ea4646;
+             }
+
+            .ico {
+                display: inline-block;
+                width: 23px;
+                height: 23px;
+                margin-right: 10px;
+                vertical-align: top;
+            }
+
+            .lightbox {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                width: 550px;
+                margin-left: -275px;
+                background: #fff;
+                
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                font-size: 16px;
+                font-family: Arial;
+                padding: 10px 20px 20px;
+                z-index: 16000;
+                display: none;
+            }
+
+            #closeAccFill {
+                position: absolute;
+                right: 10px;
+                top: 5px;
+                text-decoration: none;
+                color: #000;
+                font-size: 18px;
+                font-family: verdana;
+            }
+
+            #fillAccount, #setSalary {
+                width: 80px;
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                background: #4a9edc;
+                text-align: center;
+                color: #FFF;
+                font-size: 16px;
+                text-decoration: none;
+                padding: 0 10px;
+            }
+
+            #cancellFill {
+                color: #3355CC;
+                font-size: 16px;
+                border-bottom: 1px dashed #3355CC;
+                text-decoration: none;
+                margin-left: 30px;
+                vertical-align: top;
+                margin-top: 5px;
+                display: inline-block;
+            }
+                            .mw_wrap {
+                                position: fixed;
+
+                            }
+
+                            .mw_wrap.v2 .m_window {
+                                width: 0;
+                                vertical-align: bottom;
+                                background-color: transparent;
+                            }
+
+                            .mw_close2 {
+                                width: 25px;
+                                height: 26px;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background: url(/img/close_small.png);
+                            }
+
+                            #photo_big {
+                                border: solid 2px #fff;
+                                position: absolute; 
+                                bottom: 0;
+                            }
+
+
+            #photo_thumb, .preview_thumb {
+                cursor: pointer;
+                width: 145px;
+                height: 110px;
+            }
+
+            .summary .col {
+                color: #58bd26;
+            }
+            .summary .col:not(:first-child) {
+                margin-left: 20px;
+            }
+            .vc_info {
+                color: #354353;
+            }
+            .content {
+                width: 705px;
+            }
+            .summary span:last-child {
+                line-height: 27px;
+            }
+            .vc_detail h3 {
+                font-size: 25px;
+                line-height: 30px;
+            }
+            p.bigger_lh {
+                line-height: 23px;
+            }
+
+            .rs_menu.fixed {
+                position: fixed;
+                top: 80px;
+            }
+
+            .rs_menu.fixedPlus {
+               /* position: fixed;
+                top: 20px;*/
+            }
+
+            .preview, #footer {
+                z-index: 2;
+            }
+
+            
+                    </style>
 </head>
-<body>
-        <div class="header">
-            <div class="about-contacts">
-                <div class="about">
-                    <div><h1>Popov Andrei</h1></div>
-                    <div><h2>Male, 24 years old, higher education, no kids, not married.</h2></div>
-                </div>
-                <div class="contacts">
-                    <div class="contacts__block">Desired position</div>
-                    <div class="contacts__block">Junior ASP.NET Developer</div>
-                    <div class="contacts__block">E-mail</div>
-                    <div class="contacts__block">vl.com.md2@mail.ru</div>
-                    <div class="contacts__block">Phone</div>
-                    <div class="contacts__block">+373 60279196</div>
-                    <div class="contacts__block">Skype</div>
-                    <div class="contacts__block">dragon46938519</div>
-                    <div class="contacts__block">Salary</div>
-                    <div class="contacts__block">negotiable</div>
-                    <div class="contacts__block">Schedule</div>
-                    <div class="contacts__block">Full day</div>
-                    <div class="contacts__block">City</div>
-                    <div class="contacts__block">Chisinau</div>
-                    <div class="contacts__block">Business trip</div>
-                    <div class="contacts__block">Willing to trip</div>
-                </div>
+<body id="pg_in" style="opacity: 1; display: block;">
+   <!--wrapper-->
+        <div id="wrapper" style="overflow: hidden;">
+            <!--header-->
+            
+
+<style type="text/css">
+    body { display: none; }
+    .li_p_new { width: 12px; height: 12px; margin: 17px 1px 0px 0px; position: absolute; top: 0px; right: 0px; }
+</style>
+   <div id="header">
+    <div class="head v1">
+                            <div class="in">
+                <div class="logo"><a href="https://popovandrei.github.io/index.html"><img src="https://popovandrei.github.io/img/logo1.png" alt="https://www.rabota.md/" width="139" height="30"></a></div>
+                <div class="phone">
+                                            <p>+373 60279196</p>
+                        <a href="mailto:vl.com.md2@mail.ru">vl.com.md2@mail.ru</a>
+                                        </div>
             </div>
-            <div class="photo">
-                <img src="img/popovandrei.jpg" alt="Popov Andrei">
+                    </div>
+</div>
+        <!--main-->
+        <div id="main" class="yobject-marked">
+                <div class="in">
+    </div>
+            <div class="content_wr">
+                <div class="in">
+                                      
+                    <div class="content">
+                        <div class="vc_detail" style="margin: 0px 0 40px 0;">
+                            <div class="preview" style="border: 2px solid #354353;">
+                                <div style="width: auto; padding: 1px 15px 0 22px;">
+                                        <div class="vc_info">
+           
+                                        </div>
+                                        <h1 style="margin: 0 0 15px 0;">Junior ASP.NET Developer</h1>
+                                        <div class="vc_info" style="font-size: 14px;margin-bottom: 16px">
+                                                                                            Мужчина, 24 года, высшее образование, детей нет, не состоит в браке.                                                                                    </div>
+                                    </div>
+                                    <div class="summary">
+                                        <div class="col">
+                                            <span><img src="https://popovandrei.github.io/img/money.png"></span> 
+                                            <span>З/П договорная</span>
+                                        </div>
+                                        <div class="col">
+                                            <span><img src="https://popovandrei.github.io/img/work.png"></span>
+                                            <span>Кишинев</span>
+                                        </div>
+                                                                                    <div class="col">
+                                                <span><img src="https://popovandrei.github.io/img/time.png"></span>
+                                                <span>Полный рабочий день</span>
+                                            </div>
+                                                                                <div class="clear"></div>
+                                    </div>
+                                    <div style="width: auto; padding: 10px 15px 0 22px;display: inherit;">
+                                        <div id="rsm_photo_left">
+                                            <img src="https://popovandrei.github.io/img/Rabota_md_im_5a27bc4b0e803.jpeg">
+                                        </div>
+                                        <div id="rsm_photo_right">
+                                                                                                                                                <div class="rsm_photo_item">
+                                                        <div><strong style="font-size: 16px;">Попов Андрей</strong></div>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    
+                                                                                                                                                                        <div class="rsm_photo_item">
+                                                                <span class="title_class">Телефон:</span>                                                                <span class="info_class">+373 60279196</span>
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                                                                                                                                
+                                                                                                        <div class="rsm_photo_item">
+                                                        <span class="title_class"><yobject id="39d339a01683e0f808faac7525e29b5432820oCgZydXc5MTMYAsO2QTg" data-yobjectid="0oCgZydXc5MTMYAsO2QTg" data-yobjectbegin="3282" data-yobjectlength="5" data-hashcode="39d339a01683e0f808faac7525e29b54" data-reqid="76BC983A-5C97-4D3B-B660-E85985831763/ac70c75c796a25ed6e1ac766c79b9ef3">Email</yobject>:</span>
+                                                        <span class="info_class">vl.com.md2@mail.ru</span>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                                                                        
+                                                                                                        <div class="rsm_photo_item">
+                                                        <span class="title_class">Skype:</span>
+                                                        <span class="info_class">dragon46938519</span>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    
+                                                                                                
+                                                                                    </div>
+                                    </div>
+                                                                                                                                                                                                            </div>
+                            <div class="preview" style="margin-top: 15px">
+                                                            <div class="rsm_bottom_line">
+                                    <div class="title_education">Опыт работы</div>
+                                    <div class="rsm_education">4 месяца</div>
+                                                                            <div class="rsm_block_item">
+                                            <div class="rsm_block_left">
+                                                                                            <div class="rsm_data"><span>февраль 2017 - май 2017</span><br>
+                                                    <div style="font-style: italic;">4 месяца</div>
+                                                </div>
+                                            </div>
+                                            <div class="rsm_block_right">
+                                                <div class="rsm_h2_blue">Junior ASP.NET Developer</div>
+                                                <div class="rsm_adress rsm_shadow">
+                                                    <strong>Innonet-exim</strong>, Кишинев<br>
+                                                    <div style="margin-top: 5px;">Отрасль: IT, <yobject id="39d339a01683e0f808faac7525e29b5453520oCgZydXcyNjMYAoSF3Qs" data-yobjectid="0oCgZydXcyNjMYAoSF3Qs" data-yobjectbegin="5352" data-yobjectlength="8" data-hashcode="39d339a01683e0f808faac7525e29b54" data-reqid="76BC983A-5C97-4D3B-B660-E85985831763/ac70c75c796a25ed6e1ac766c79b9ef3">Интернет</yobject></div>
+                                                </div>
+                                                <p></p><p class="bigger_lh"></p><p class="bigger_lh">Developed solutions for our clients</p><p></p><p></p>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                                                    </div>
+                                                        
+                                                            <div class="rsm_bottom_line">
+                                    <div class="title_education">Учился</div>
+                                    <div class="rsm_education">Высшее образование</div>
+                                                                            <div class="rsm_block_item">
+                                            <div class="rsm_block_left">
+                                                                                            <div class="rsm_data"><span>по 2016</span><br> </div>
+                                            </div>
+                                            <div class="rsm_block_right">
+                                                <div class="rsm_adress rsm_shadow">
+                                                    <strong>Slavonic University<br></strong>
+                                                    <div>
+                                                                                                                Факультет: Systems and <yobject id="39d339a01683e0f808faac7525e29b5465860oCgpydXcxODAyNjUwGAKaSSmu" data-yobjectid="0oCgpydXcxODAyNjUwGAKaSSmu" data-yobjectbegin="6586" data-yobjectlength="20" data-hashcode="39d339a01683e0f808faac7525e29b54" data-reqid="76BC983A-5C97-4D3B-B660-E85985831763/ac70c75c796a25ed6e1ac766c79b9ef3">Computer Engineering</yobject>.<br> 
+                                                                                                                                                                        Специальность: Information Technjlogy.
+                                                                                                            </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                                                    </div>
+                                                                                                                        <div class="rsm_bottom_line">
+                                        <div class="title_education" style="margin-bottom: 15px;">Портфолио</div>
+                                        <div style="width: 650px; margin: auto; overflow: hidden;">
+                                                <div style="display: block; width: 145px; height: 110px; float: left; margin: 10px 5px 10px 10px;">
+                                                    <a href="https://popovandrei.github.io/img/rabota_md_im_59d4e4d0a7bd4.jpeg">
+                                                        <div style="width: 145px; height: 110px; display: table-cell; text-align: center; vertical-align: middle;">
+                                                        <img class="preview_thumb" src="https://popovandrei.github.io/img/spu-ea68c8-ogi2-3cwn3bmfojjlb56e.jpg" alt_src="/img/ext_form/user_files/portfolio/200574/rabota_md_im_59d4e4d0a7bd4.jpeg" style="border-radius: 4px;">
+                                                        </div>
+                                                    </a>
+                                               </div>
+                                               <div style="display: block; width: 145px; height: 110px; float: left; margin: 10px 5px 10px 10px;">
+                                                    <a href="https://popovandrei.github.io/img/IMG_15022018_101506_0.png">
+                                                        <div style="width: 145px; height: 110px; display: table-cell; text-align: center; vertical-align: middle;">
+                                                        <img class="preview_thumb" src="https://popovandrei.github.io/img/IMG_15022018_101506_0.png" style="border-radius: 4px;">
+                                                        </div>
+                                                    </a>
+                                               </div>
+                                               <div style="display: block; width: 145px; height: 110px; float: left; margin: 10px 5px 10px 10px;">
+                                                    <a href="https://popovandrei.github.io/img/IMG_15022018_101519_0.png">
+                                                        <div style="width: 145px; height: 110px; display: table-cell; text-align: center; vertical-align: middle;">
+                                                        <img class="preview_thumb" src="https://popovandrei.github.io/img/IMG_15022018_101519_0.png" style="border-radius: 4px;">
+                                                        </div>
+                                                    </a>
+                                               </div>
+                                               <div style="display: block; width: 145px; height: 110px; float: left; margin: 10px 5px 10px 10px;">
+                                                    <a href="https://popovandrei.github.io/img/IMG_15022018_101604_0.png">
+                                                        <div style="width: 145px; height: 110px; display: table-cell; text-align: center; vertical-align: middle;">
+                                                        <img class="preview_thumb" src="https://popovandrei.github.io/img/IMG_15022018_101604_0.png" style="border-radius: 4px;">
+                                                        </div>
+                                                    </a>
+                                               </div>
+                                                                                    </div>
+                                    </div>
+                                                                                    <div id="rsm_block_know" class="rsm_bottom_line">
+                                <div class="title_education">Ключевые навыки</div>
+                                                                    <div class="rsm_block_item" style="margin-bottom: 0">
+                                        <div class="rsm_block_left">
+                                            <div class="rsm_data" style="height: 24px; padding: 3px; margin: 0px;"><img src="https://popovandrei.github.io/img/RU.png"></div>
+                                        </div>
+                                        <div class="rsm_block_right">
+                                            <div style="height: 24px; padding: 3px; margin: 0px;">Русский — Родной</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                                                    <div class="rsm_block_item" style="margin-bottom: 0">
+                                        <div class="rsm_block_left">
+                                            <div class="rsm_data" style="height: 24px; padding: 3px; margin: 0px;"><img src="https://popovandrei.github.io/img/RO.png"></div>
+                                        </div>
+                                        <div class="rsm_block_right">
+                                            <div style="height: 24px; padding: 3px; margin: 0px;">Румынский — Базовый</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                                                    <div class="rsm_block_item" style="margin-bottom: 0">
+                                        <div class="rsm_block_left">
+                                            <div class="rsm_data" style="height: 24px; padding: 3px; margin: 0px;"><img src="https://popovandrei.github.io/img/GB.png"></div>
+                                        </div>
+                                        <div class="rsm_block_right">
+                                            <div style="height: 24px; padding: 3px; margin: 0px;">Английский — Базовый</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                                                    <div class="rsm_block_item">
+                                        <div class="rsm_block_left">
+                                            <div class="rsm_data" style="height: 24px; padding: 3px; margin: 0px;">
+                                            </div>
+                                        </div>
+                                        <div class="rsm_block_right">
+                                            <br><p class="bigger_lh">-C#;<br>
+-.NET Framework 4.5;<br>
+-ASP.NET;<br>
+-LINQ<br>
+-SQL;<br>
+-HTML5;<br>
+-CSS3;<br>
+-JavaScript;<br>
+-JQuery;<br>
+-Git;<br>
+</p>                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                            </div>
+                                                        
+                            <div id="rsm_block_about" class="rsm_bottom_line">
+                                <div class="title_education">Дополнительная информация</div>
+                                                                    <div style="margin: 0px; padding: 0px;">
+                                        <img src="https://popovandrei.github.io/img/trip.png" style="vertical-align: middle;"> <span style="display: inline-block;">готов к командировкам</span>
+                                    </div>
+                                                                
+                                                                    <div style="margin: 0px; padding: 0px;">
+                                        <img src="https://popovandrei.github.io/img/drive_lic.png" style="vertical-align: middle;"> <span style="display: inline-block;">права категории B</span>
+                                    </div>
+                                                                
+                                                                
+                                                                
+                                                                                                            <div style="color: #2e2e2e; font-size: 14px; line-height: 20px;">
+                                        <span style="display: inline-block;">Гражданство:</span>
+                                            <img src="https://popovandrei.github.io/img/MD.png" style="vertical-align: middle; margin: 5px; display: inline-block;"> <span style="display: inline-block;">Молдова,</span>
+                                            <img src="https://popovandrei.github.io/img/RU.png" style="vertical-align: middle; margin: 5px; display: inline-block;"> <span style="display: inline-block;">Россия</span>
+                                                                                </div>
+                                                                        
+                                                                                                    </div>
+                                                                                                                                                                                                                                </div>
+                                                                                                
+                                                                                    </div>
+            <div class="in" style="margin-bottom: 50px; z-index: 2;">
             </div>
+
+                    </div>
+
+            </div>
+            <div class="clear"></div>
+        </div><!--/main-->
+
+                </div><!--/wrapper-->
+    <!--footer-->
+ <div id="footer">
+    <div class="foot">
+        <div class="in">
+            <div class="logo"><img src="https://popovandrei.github.io/img/logo1.png" alt="https://www.rabota.md/" width="139" height="25"></div>
+            <div class="copy">© 2018 SKIM</div>
         </div>
-        <div class="main">
-            <div class="experience">
-                <h3>Experience</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="education">
-                <h3>Education</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="skills">
-                <h3>Programming skills</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="languageskills">
-                <h3>Language skills</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="additionalinformation">
-                <h3>Additional information</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-        </div>
-</body>
-</html>
+    </div>
+</div>
+
+
+
+
+    
+
+
+</div></body></html>
